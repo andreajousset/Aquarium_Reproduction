@@ -1,0 +1,207 @@
+body
+{
+	margin: 0;
+	overflow: hidden;
+}
+
+.background
+{
+	position: fixed;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	bottom: 0px;
+	right: 0px;
+	top: 0px;
+	left: 0px;
+	z-index: -100;
+	background-size: cover;
+}
+
+.block
+{
+	display: flex;
+	flex-direction: column;
+	margin-top:10%;
+	margin-bottom: 10%;
+	margin-left: 10%;
+	
+}
+#titre1
+{
+	color: #FFCD3D;
+	font-family: 'Times New Roman', Times, sans-serif;
+	font-size: 65px;
+}
+
+.savoir, .savoir:visited
+{
+	color: white;
+	border-bottom: 2px solid #FFFFFF;
+	padding-bottom: 7px;
+	text-decoration: none;
+}
+
+.information
+{
+	color: white;
+	font-size: 12px;
+	text-transform: uppercase;
+    display: inline-block;
+}
+
+.logo
+{
+	position: absolute;
+	top: 500px;
+	left: 950px;
+	width: 320px;
+}
+.image
+{
+	height: 560px;
+	width: 1263px;
+	margin-top: 107px;
+}
+
+.block_2
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	bottom: 120px;
+}
+
+button {
+   background-color: #FF512F;	
+   margin: 10px;
+   padding: 15px 45px;
+   border-radius: 2px;
+   box-shadow:inset 0px 0px 0px 0px #fce2c1;
+   text-align: center;
+   text-transform: uppercase;
+   font-weight:bold;
+   font-size: 17px;
+   background-size: 200% auto;         
+   display: inline-block;
+ }
+
+ button a, a:visited
+ {
+	 color: white; 
+	 text-decoration: none; 
+ }
+
+.block_2 p
+{
+	color: white;
+	letter-spacing: 4px;
+}
+
+nav 
+{
+  overflow: hidden;
+  background-color: #000066;
+  padding: 10px 0 ;
+}
+
+ul
+{
+list-style: none;
+margin: 0 auto;
+}
+li 
+{
+
+  float: left;
+}
+
+li a 
+{
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align: center;
+  padding:  10px 20px ;
+  text-decoration: none;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .3s;
+}
+
+nav ul li a:hover 
+{
+	color:#E75405;
+}
+
+nav.fill ul li a {
+	position: relative;
+}
+
+nav.fill ul li a:after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 0%;
+	content: '.';
+	color: transparent;
+	background: rgb(255, 255, 255);
+	height: 1px;
+  }
+  nav.fill ul li a {
+	transition: all 2s;
+  }
+  
+  nav.fill ul li a:after {
+	text-align: left;
+	content: '.';
+	margin: 0;
+	opacity: 0;
+  }
+  nav.fill ul li a:hover {
+	color: #fff;
+	z-index: 1;
+  }
+  nav.fill ul li a:hover:after {
+	z-index: -10;
+	animation: fill 1s forwards;
+	-webkit-animation: fill 1s forwards;
+	-moz-animation: fill 1s forwards;
+	opacity: 1;
+  }
+
+.aide 
+{
+	margin-right: 10px;
+}
+#logo1
+{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+@keyframes fill {
+	0% {
+	  width: 0%;
+	  height: 1px;
+	}
+	50% {
+	  width: 100%;
+	  height: 1px;
+	}
+	100% {
+	  width: 100%;
+	  height: 100%;
+	  background: #E75405;
+	}
+  }
